@@ -1,0 +1,3903 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%@ burned %@ kcal according to Apple Health: the target uses the real number.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ a brûlé %2$@ kcal d’après Apple Santé : l’objectif utilise le chiffre réel."
+          }
+        }
+      }
+    },
+    "%@ g per kg": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ g par kg"
+          }
+        }
+      }
+    },
+    "%@ g/kg · follows the training": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ g/kg · suit l’entraînement"
+          }
+        }
+      }
+    },
+    "%@ g/kg · the same every day": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ g/kg · pareil tous les jours"
+          }
+        }
+      }
+    },
+    "%@ goal": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ objectif"
+          }
+        }
+      }
+    },
+    "%@ kcal": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ kcal"
+          }
+        }
+      }
+    },
+    "%@ serving": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ portion"
+          }
+        }
+      }
+    },
+    "%@ servings": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ portions"
+          }
+        }
+      }
+    },
+    "%@ training": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ séance"
+          }
+        }
+      }
+    },
+    "%@ · %lld kcal": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ · %2$lld kcal"
+          }
+        }
+      }
+    },
+    "%@ · planned in Coach": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · prévu dans Coach"
+          }
+        }
+      }
+    },
+    "%@ · recorded": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · enregistré"
+          }
+        }
+      }
+    },
+    "%@ → %@": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ → %2$@"
+          }
+        }
+      }
+    },
+    "%@ → %@ kg around %@": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ → %2$@ kg vers le %3$@"
+          }
+        }
+      }
+    },
+    "%@%@ kg/week": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@%2$@ kg/sem"
+          }
+        }
+      }
+    },
+    "%lld": {
+      "shouldTranslate": false
+    },
+    "%lld / %lld g": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld / %2$lld g"
+          }
+        }
+      }
+    },
+    "%lld active kcal today · meals saved to Health": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld kcal actives aujourd’hui · repas envoyés à Santé"
+          }
+        }
+      }
+    },
+    "%lld days": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld jours"
+          }
+        }
+      }
+    },
+    "%lld g": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld g"
+          }
+        }
+      }
+    },
+    "%lld g a day at %@ kg · aim higher in a deficit to keep muscle": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld g par jour à %2$@ kg · plus haut en déficit pour garder le muscle"
+          }
+        }
+      }
+    },
+    "%lld g carbs": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld g glucides"
+          }
+        }
+      }
+    },
+    "%lld items · merged with what's already on \"%@\"": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld articles · fusionnés avec ce qui est déjà sur « %2$@ »"
+          }
+        }
+      }
+    },
+    "%lld kcal": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld kcal"
+          }
+        }
+      }
+    },
+    "%lld kcal/100 g": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld kcal/100 g"
+          }
+        }
+      }
+    },
+    "%lld min": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld min"
+          }
+        }
+      }
+    },
+    "%lld of %lld ingredients checked": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld ingrédients vérifiés sur %2$lld"
+          }
+        }
+      }
+    },
+    "0": {
+      "shouldTranslate": false
+    },
+    "1 serving (%lld g)": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 portion (%lld g)"
+          }
+        }
+      }
+    },
+    "100": {
+      "shouldTranslate": false
+    },
+    "200 g flour": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "200 g de farine"
+          }
+        }
+      }
+    },
+    "3017620422003": {
+      "shouldTranslate": false
+    },
+    "7-day average · Health": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "moyenne 7 j · Santé"
+          }
+        }
+      }
+    },
+    "< 20 min": {
+      "extractionState": "stale",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "< 20 min"
+          }
+        }
+      }
+    },
+    "A quick dish with the chicken and sweet potatoes I have left, high in protein": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un plat rapide avec le poulet et les patates douces qu'il me reste, riche en protéines"
+          }
+        }
+      }
+    },
+    "About +%@ kcal over the week, more on training days.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Environ +%@ kcal sur la semaine, davantage les jours d’entraînement."
+          }
+        }
+      }
+    },
+    "About −%@ kcal over the week. Watch your energy in key sessions.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Environ −%@ kcal sur la semaine. Surveille ton énergie sur les séances clés."
+          }
+        }
+      }
+    },
+    "Account": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compte"
+          }
+        }
+      }
+    },
+    "Adapt each day to the planned session": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adapter chaque jour à la séance prévue"
+          }
+        }
+      }
+    },
+    "Add": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter"
+          }
+        }
+      }
+    },
+    "Add a meal": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter un repas"
+          }
+        }
+      }
+    },
+    "Add a recipe": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter une recette"
+          }
+        }
+      }
+    },
+    "Add a step": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter une étape"
+          }
+        }
+      }
+    },
+    "Add again": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter à nouveau"
+          }
+        }
+      }
+    },
+    "Add an ingredient": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter un ingrédient"
+          }
+        }
+      }
+    },
+    "Add an ingredient (\"1 apple\", \"20 g butter\")": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter un ingrédient (« 1 pomme », « 20 g de beurre »)"
+          }
+        }
+      }
+    },
+    "Add it in Claude": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajoute-le dans Claude"
+          }
+        }
+      }
+    },
+    "Add to %@": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter au %@"
+          }
+        }
+      }
+    },
+    "Add to groceries": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter aux courses"
+          }
+        }
+      }
+    },
+    "Add what you have (rice, eggs, feta…)": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajoute ce que tu as (riz, œufs, feta…)"
+          }
+        }
+      }
+    },
+    "After two weeks of logged meals and a few weigh-ins in Health, Popote compares your weight trend with what you ate and adjusts your targets. Checked every week.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Après deux semaines de repas notés et quelques pesées dans Santé, Popote compare la tendance de ton poids à ce que tu as mangé et ajuste tes objectifs. Vérifié chaque semaine."
+          }
+        }
+      }
+    },
+    "All": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toutes"
+          }
+        }
+      }
+    },
+    "Already in your pantry (%lld)": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Déjà dans ton placard (%lld)"
+          }
+        }
+      }
+    },
+    "Already on the list": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Déjà sur la liste"
+          }
+        }
+      }
+    },
+    "Also on \"%@\"": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aussi sur « %@ »"
+          }
+        }
+      }
+    },
+    "Analyze my meal in Popote (request %@): call get_meal_request, then save the ingredients with save_meal_analysis.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analyse mon repas dans Popote (demande %@) : appelle get_meal_request, puis enregistre les ingrédients avec save_meal_analysis."
+          }
+        }
+      }
+    },
+    "Apple Health": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Santé"
+          }
+        }
+      }
+    },
+    "Apple Health up to date": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Santé à jour"
+          }
+        }
+      }
+    },
+    "Ask Claude": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demander à Claude"
+          }
+        }
+      }
+    },
+    "At home": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À la maison"
+          }
+        }
+      }
+    },
+    "Average %@ kcal/day · %@ kcal over the week ≈ %@ kg.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moyenne %1$@ kcal/j · %2$@ kcal sur la semaine ≈ %3$@ kg."
+          }
+        }
+      }
+    },
+    "Average %@ kcal/day.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moyenne %@ kcal/j."
+          }
+        }
+      }
+    },
+    "B!": {
+      "shouldTranslate": false
+    },
+    "Bakery": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boulangerie"
+          }
+        }
+      }
+    },
+    "Base target": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objectif de base"
+          }
+        }
+      }
+    },
+    "Base target from Settings": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objectif de base des Réglages"
+          }
+        }
+      }
+    },
+    "Batch 4 servings": {
+      "extractionState": "stale",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Batch 4 portions"
+          }
+        }
+      }
+    },
+    "Before a workout": {
+      "extractionState": "stale",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avant une sortie"
+          }
+        }
+      }
+    },
+    "Breakfast": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Petit-déjeuner"
+          }
+        }
+      }
+    },
+    "Bring!": {
+      "shouldTranslate": false
+    },
+    "Bring! didn't answer as expected (error %lld).": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bring! n'a pas répondu comme prévu (erreur %lld)."
+          }
+        }
+      }
+    },
+    "Bring! password": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mot de passe Bring!"
+          }
+        }
+      }
+    },
+    "Calories": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calories"
+          }
+        }
+      }
+    },
+    "Calories and macros left for today": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calories et macros restantes aujourd'hui"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annuler"
+          }
+        }
+      }
+    },
+    "Caption": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Légende"
+          }
+        }
+      }
+    },
+    "Carbs": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Glucides"
+          }
+        }
+      }
+    },
+    "Changes are saved to Apple Health too.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les modifications sont aussi enregistrées dans Apple Santé."
+          }
+        }
+      }
+    },
+    "Changing the quantity updates the calories and macros.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Changer la quantité met à jour les calories et les macros."
+          }
+        }
+      }
+    },
+    "Check now": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérifier maintenant"
+          }
+        }
+      }
+    },
+    "Check the import": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérifier l'import"
+          }
+        }
+      }
+    },
+    "Check the recipe": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérifier la recette"
+          }
+        }
+      }
+    },
+    "Checked": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérifié"
+          }
+        }
+      }
+    },
+    "Choose a photo": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisir une photo"
+          }
+        }
+      }
+    },
+    "Claude": {
+      "shouldTranslate": false
+    },
+    "Claude does the thinking in the Claude app, with your own plan. Popote gives it your pantry and targets, and receives what it creates.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Claude réfléchit dans l'app Claude, avec ton propre forfait. Popote lui donne ton placard et tes objectifs, et reçoit ce qu'il crée."
+          }
+        }
+      }
+    },
+    "Claude is connected": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Claude est connecté"
+          }
+        }
+      }
+    },
+    "Claude is looking at your meal": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Claude regarde ton repas"
+          }
+        }
+      }
+    },
+    "Claude shows you the recipe, you adjust it together, and it lands in your recipes.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Claude te montre la recette, vous l'ajustez ensemble, et elle arrive dans tes recettes."
+          }
+        }
+      }
+    },
+    "Claude works in the Claude app with your own plan, through the Popote connector, like the Coach app. Changing the server creates a new connector link.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Claude travaille dans l'app Claude avec ton forfait, via le connecteur Popote, comme l'app Coach. Changer de serveur crée un nouveau lien de connecteur."
+          }
+        }
+      }
+    },
+    "Claude › Settings › Connectors › Add custom connector. Name it Popote and paste the link.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Claude › Réglages › Connecteurs › Ajouter un connecteur personnalisé. Nomme-le Popote et colle le lien."
+          }
+        }
+      }
+    },
+    "Close": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fermer"
+          }
+        }
+      }
+    },
+    "Coach": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coach"
+          }
+        }
+      }
+    },
+    "Coach plan not found. Open the Coach app once: it shares its plan with Popote on this iPhone.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Programme Coach introuvable. Ouvre l’app Coach une fois : elle partage son programme avec Popote sur cet iPhone."
+          }
+        }
+      }
+    },
+    "Coach plan updated %@ · %lld upcoming sessions.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Programme Coach mis à jour %1$@ · %2$lld séances à venir."
+          }
+        }
+      }
+    },
+    "Connect": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connecter"
+          }
+        }
+      }
+    },
+    "Connect Apple Health": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connecter Apple Santé"
+          }
+        }
+      }
+    },
+    "Connect Bring!": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connecter Bring!"
+          }
+        }
+      }
+    },
+    "Connect Claude": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connecter Claude"
+          }
+        }
+      }
+    },
+    "Connect Popote to Claude": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connecter Popote à Claude"
+          }
+        }
+      }
+    },
+    "Connect your Bring! account first.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connecte d'abord ton compte Bring!."
+          }
+        }
+      }
+    },
+    "Connected": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connecté"
+          }
+        }
+      }
+    },
+    "Connecting to the Popote server…": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connexion au serveur Popote…"
+          }
+        }
+      }
+    },
+    "Connector": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connecteur"
+          }
+        }
+      }
+    },
+    "Continue in Claude": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuer dans Claude"
+          }
+        }
+      }
+    },
+    "Copied": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copié"
+          }
+        }
+      }
+    },
+    "Copy the link": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copier le lien"
+          }
+        }
+      }
+    },
+    "Copy your connector link": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copie ton lien de connecteur"
+          }
+        }
+      }
+    },
+    "Couldn't reach the Popote server: %@": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de joindre le serveur Popote : %@"
+          }
+        }
+      }
+    },
+    "Create a recipe for Popote: %@": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crée une recette pour Popote : %@"
+          }
+        }
+      }
+    },
+    "Create with Claude": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Créer avec Claude"
+          }
+        }
+      }
+    },
+    "Daily target": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objectif du jour"
+          }
+        }
+      }
+    },
+    "Daily targets this week": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objectifs de la semaine"
+          }
+        }
+      }
+    },
+    "Dairy & eggs": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crèmerie & œufs"
+          }
+        }
+      }
+    },
+    "Delete": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer"
+          }
+        }
+      }
+    },
+    "Delete this meal?": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer ce repas ?"
+          }
+        }
+      }
+    },
+    "Delete this recipe?": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer cette recette ?"
+          }
+        }
+      }
+    },
+    "Describe · Photo · Scan · Recipe": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Décrire · Photo · Scanner · Recette"
+          }
+        }
+      }
+    },
+    "Dinner": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dîner"
+          }
+        }
+      }
+    },
+    "Disconnect": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Déconnecter"
+          }
+        }
+      }
+    },
+    "Dismiss": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Masquer"
+          }
+        }
+      }
+    },
+    "Don't count it": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ne pas le compter"
+          }
+        }
+      }
+    },
+    "Done": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        }
+      }
+    },
+    "Drinks": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boissons"
+          }
+        }
+      }
+    },
+    "Each day's target follows your goal and your Coach plan. Base target and weight are used only when Apple Health has no data.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’objectif de chaque jour suit ton objectif et ton programme Coach. L’objectif de base et le poids ne servent que sans données Apple Santé."
+          }
+        }
+      }
+    },
+    "Easy day": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jour facile"
+          }
+        }
+      }
+    },
+    "Easy session planned: a bit more to eat and moderate carbs.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Séance facile prévue : un peu plus à manger et des glucides modérés."
+          }
+        }
+      }
+    },
+    "Edit": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifier"
+          }
+        }
+      }
+    },
+    "Edit meal": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifier le repas"
+          }
+        }
+      }
+    },
+    "Email": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "E-mail"
+          }
+        }
+      }
+    },
+    "Estimated": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estimé"
+          }
+        }
+      }
+    },
+    "Everyday movement": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mouvement du quotidien"
+          }
+        }
+      }
+    },
+    "Fast: about −%@ kcal over the week. Hard to sustain with a lot of training.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rapide : environ −%@ kcal sur la semaine. Difficile à tenir avec beaucoup d’entraînement."
+          }
+        }
+      }
+    },
+    "Fat": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lipides"
+          }
+        }
+      }
+    },
+    "Food": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aliment"
+          }
+        }
+      }
+    },
+    "Foods": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aliments"
+          }
+        }
+      }
+    },
+    "Fresh herbs": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Herbes fraîches"
+          }
+        }
+      }
+    },
+    "Frozen": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Surgelés"
+          }
+        }
+      }
+    },
+    "Fruit & vegetables": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fruits & légumes"
+          }
+        }
+      }
+    },
+    "Gain": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prendre"
+          }
+        }
+      }
+    },
+    "Gain %@ kg/week": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prendre %@ kg/sem"
+          }
+        }
+      }
+    },
+    "Gentle and compatible with training: about −%@ kcal over the week.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doux et compatible avec l’entraînement : environ −%@ kcal sur la semaine."
+          }
+        }
+      }
+    },
+    "Goal": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objectif"
+          }
+        }
+      }
+    },
+    "Groceries": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Courses"
+          }
+        }
+      }
+    },
+    "Hi! I just connected Popote. Call get_context and tell me in two sentences what you can do for me.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salut ! Je viens de connecter Popote. Appelle get_context et dis-moi en deux phrases ce que tu peux faire pour moi."
+          }
+        }
+      }
+    },
+    "Hide": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Masquer"
+          }
+        }
+      }
+    },
+    "Highlighted lines were read automatically. Write them like \"200 g flour\" or \"2 tbsp olive oil\".": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les lignes surlignées ont été lues automatiquement. Écris-les comme « 200 g de farine » ou « 2 c. à soupe d'huile d'olive »."
+          }
+        }
+      }
+    },
+    "I already have it": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je l'ai déjà"
+          }
+        }
+      }
+    },
+    "I'm eating it": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "J'en mange"
+          }
+        }
+      }
+    },
+    "Import": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importer"
+          }
+        }
+      }
+    },
+    "Import a link": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importer un lien"
+          }
+        }
+      }
+    },
+    "Import failed": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Échec de l'import"
+          }
+        }
+      }
+    },
+    "Importing…": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Import en cours…"
+          }
+        }
+      }
+    },
+    "In Instagram, YouTube, TikTok or Safari, tap Share, then Popote.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dans Instagram, YouTube, TikTok ou Safari, touche Partager, puis Popote."
+          }
+        }
+      }
+    },
+    "In the pantry": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dans le placard"
+          }
+        }
+      }
+    },
+    "In the shopping list": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dans la liste de courses"
+          }
+        }
+      }
+    },
+    "Ingredients": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingrédients"
+          }
+        }
+      }
+    },
+    "Ingredients were read from the caption. Quantities may need a fix.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les ingrédients ont été lus dans la légende. Certaines quantités sont peut-être à corriger."
+          }
+        }
+      }
+    },
+    "Install Coach and open it once to plan each day from your sessions.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installe Coach et ouvre-le une fois pour régler chaque jour d’après tes séances."
+          }
+        }
+      }
+    },
+    "Install the Coach app on this iPhone, then open it once.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installe l’app Coach sur cet iPhone, puis ouvre-la une fois."
+          }
+        }
+      }
+    },
+    "Intervals, tests, important long sessions": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fractionné, tests, sorties longues importantes"
+          }
+        }
+      }
+    },
+    "Items you add here are left off the shopping list. Long-press an item in Groceries to move it here.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ce que tu ajoutes ici n'apparaît plus dans la liste de courses. Dans Courses, appuie longuement sur un article pour le déplacer ici."
+          }
+        }
+      }
+    },
+    "Journal": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Journal"
+          }
+        }
+      }
+    },
+    "Key session": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Séance clé"
+          }
+        }
+      }
+    },
+    "Key session planned: eat enough to perform, carbs up.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Séance clé prévue : mange assez pour performer, glucides en hausse."
+          }
+        }
+      }
+    },
+    "Learned correction": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correction apprise"
+          }
+        }
+      }
+    },
+    "Learning…": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apprentissage en cours…"
+          }
+        }
+      }
+    },
+    "List": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liste"
+          }
+        }
+      }
+    },
+    "Log": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter"
+          }
+        }
+      }
+    },
+    "Long day": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jour long"
+          }
+        }
+      }
+    },
+    "Long session planned: eat more, especially carbs, with only a small deficit.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longue séance prévue : on mange plus, surtout des glucides, avec seulement un petit déficit."
+          }
+        }
+      }
+    },
+    "Long session planned: eat more, especially carbs.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longue séance prévue : on mange plus, surtout des glucides."
+          }
+        }
+      }
+    },
+    "Look up": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rechercher"
+          }
+        }
+      }
+    },
+    "Lose": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perdre"
+          }
+        }
+      }
+    },
+    "Lose %@ kg/week": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perdre %@ kg/sem"
+          }
+        }
+      }
+    },
+    "Lunch": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Déjeuner"
+          }
+        }
+      }
+    },
+    "Maintain": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maintenir"
+          }
+        }
+      }
+    },
+    "Maintenance": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maintien"
+          }
+        }
+      }
+    },
+    "Maintenance in race week": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maintien en semaine de course"
+          }
+        }
+      }
+    },
+    "Manual": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Manuelle"
+          }
+        }
+      }
+    },
+    "Meal": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Repas"
+          }
+        }
+      }
+    },
+    "Meat & fish": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viande & poisson"
+          }
+        }
+      }
+    },
+    "Moderate deficit": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Déficit modéré"
+          }
+        }
+      }
+    },
+    "More calories and carbs on training days": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plus de calories et de glucides les jours d’entraînement"
+          }
+        }
+      }
+    },
+    "My goal": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mon objectif"
+          }
+        }
+      }
+    },
+    "My goal: gain %@ kg/week": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mon objectif : prendre %@ kg/sem"
+          }
+        }
+      }
+    },
+    "My goal: lose %@ kg/week": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mon objectif : perdre %@ kg/sem"
+          }
+        }
+      }
+    },
+    "My goal: maintain": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mon objectif : maintenir"
+          }
+        }
+      }
+    },
+    "My pantry": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mon placard"
+          }
+        }
+      }
+    },
+    "My recipes": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mes recettes"
+          }
+        }
+      }
+    },
+    "Name": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom"
+          }
+        }
+      }
+    },
+    "New recipe": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nouvelle recette"
+          }
+        }
+      }
+    },
+    "New recipe from Claude": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nouvelle recette de Claude"
+          }
+        }
+      }
+    },
+    "No deficit on a key session day": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas de déficit un jour de séance clé"
+          }
+        }
+      }
+    },
+    "No deficit on key session days": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas de déficit les jours de séance clé"
+          }
+        }
+      }
+    },
+    "No ingredients found. Add them from the caption.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun ingrédient trouvé. Ajoute-les depuis la légende."
+          }
+        }
+      }
+    },
+    "No link found": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun lien trouvé"
+          }
+        }
+      }
+    },
+    "No oven": {
+      "extractionState": "stale",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sans four"
+          }
+        }
+      }
+    },
+    "No product found.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun produit trouvé."
+          }
+        }
+      }
+    },
+    "No recipe found at this link.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucune recette trouvée à ce lien."
+          }
+        }
+      }
+    },
+    "No recipes yet": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas encore de recettes"
+          }
+        }
+      }
+    },
+    "No session planned: fewer carbs today.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas de séance prévue : moins de glucides aujourd’hui."
+          }
+        }
+      }
+    },
+    "No session planned: fewer carbs, and most of the week's deficit lands on days like this one.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas de séance prévue : moins de glucides, et l’essentiel du déficit de la semaine tombe sur ces jours-là."
+          }
+        }
+      }
+    },
+    "No target weight": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas de poids cible"
+          }
+        }
+      }
+    },
+    "Not connected yet": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas encore connecté"
+          }
+        }
+      }
+    },
+    "Not counted": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non compté"
+          }
+        }
+      }
+    },
+    "Nutrition": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutrition"
+          }
+        }
+      }
+    },
+    "Nutrition: average values per 100 g (Ciqual, USDA) and Open Food Facts (ODbL).": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nutrition : valeurs moyennes pour 100 g (Ciqual, USDA) et Open Food Facts (ODbL)."
+          }
+        }
+      }
+    },
+    "One time: add the Popote connector in the Claude app.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une seule fois : ajoute le connecteur Popote dans l'app Claude."
+          }
+        }
+      }
+    },
+    "Open": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir"
+          }
+        }
+      }
+    },
+    "Open Claude": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir Claude"
+          }
+        }
+      }
+    },
+    "Open Coach": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir Coach"
+          }
+        }
+      }
+    },
+    "Open Coach once: it shares your sessions with Popote, and each day's target follows them.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvre Coach une fois : il partage tes séances avec Popote, et l’objectif de chaque jour les suit."
+          }
+        }
+      }
+    },
+    "Open a recipe and tap \"Add to groceries\". Quantities from several recipes are added up and sorted by aisle.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvre une recette et touche « Ajouter aux courses ». Les quantités de plusieurs recettes sont additionnées et triées par rayon."
+          }
+        }
+      }
+    },
+    "Open the original": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir l'original"
+          }
+        }
+      }
+    },
+    "Or copy a link and tap + below.": {
+      "extractionState": "stale",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ou copie un lien et touche + en bas."
+          }
+        }
+      }
+    },
+    "Or paste a link": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ou colle un lien"
+          }
+        }
+      }
+    },
+    "Or tap + at the top to paste a link, create with Claude or write one.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ou touche + en haut pour coller un lien, créer avec Claude ou en écrire une."
+          }
+        }
+      }
+    },
+    "Other": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autre"
+          }
+        }
+      }
+    },
+    "Pace": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rythme"
+          }
+        }
+      }
+    },
+    "Pantry": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Placard"
+          }
+        }
+      }
+    },
+    "Paste the caption or description here if the import missed it.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Colle ici la légende ou la description si l'import l'a ratée."
+          }
+        }
+      }
+    },
+    "Photo": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photo"
+          }
+        }
+      }
+    },
+    "Photo of your plate": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photo de ton assiette"
+          }
+        }
+      }
+    },
+    "Pick a Bring! list first.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisis d'abord une liste Bring!."
+          }
+        }
+      }
+    },
+    "Plan each day from your training": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Règle chaque jour sur ton entraînement"
+          }
+        }
+      }
+    },
+    "Play the video": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lire la vidéo"
+          }
+        }
+      }
+    },
+    "Popote finds the ingredients, the steps and the macros.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Popote trouve les ingrédients, les étapes et les macros."
+          }
+        }
+      }
+    },
+    "Popote only adds items and updates quantities. Nothing is removed from your list.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Popote ajoute seulement des articles et met à jour les quantités. Rien n'est retiré de ta liste."
+          }
+        }
+      }
+    },
+    "Popote saves each meal (calories, protein, carbs, fat) and reads your energy burned and weight to set the daily target.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Popote enregistre chaque repas (calories, protéines, glucides, lipides) et lit ton énergie dépensée et ton poids pour fixer l'objectif du jour."
+          }
+        }
+      }
+    },
+    "Product %@ isn't in Open Food Facts.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le produit %@ n'est pas dans Open Food Facts."
+          }
+        }
+      }
+    },
+    "Products (Open Food Facts)": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Produits (Open Food Facts)"
+          }
+        }
+      }
+    },
+    "Protein": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Protéines"
+          }
+        }
+      }
+    },
+    "Quantity": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quantité"
+          }
+        }
+      }
+    },
+    "Quantity to update": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quantité à mettre à jour"
+          }
+        }
+      }
+    },
+    "Race week: maintenance": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semaine de course : maintien"
+          }
+        }
+      }
+    },
+    "Read the recipe from this text": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lire la recette dans ce texte"
+          }
+        }
+      }
+    },
+    "Reading \"%@\"…": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lecture de « %@ »…"
+          }
+        }
+      }
+    },
+    "Recent": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Récents"
+          }
+        }
+      }
+    },
+    "Recipe": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recette"
+          }
+        }
+      }
+    },
+    "Recipe ready": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recette prête"
+          }
+        }
+      }
+    },
+    "Recipes": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recettes"
+          }
+        }
+      }
+    },
+    "Reconnect Bring!": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reconnecter Bring!"
+          }
+        }
+      }
+    },
+    "Remove": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retirer"
+          }
+        }
+      }
+    },
+    "Remove from the list": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retirer de la liste"
+          }
+        }
+      }
+    },
+    "Rest day": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jour de repos"
+          }
+        }
+      }
+    },
+    "Rest day: larger deficit": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jour de repos : déficit plus marqué"
+          }
+        }
+      }
+    },
+    "Resting + everyday movement from Apple Health": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Repos + mouvement du quotidien d’Apple Santé"
+          }
+        }
+      }
+    },
+    "Resting energy": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Énergie au repos"
+          }
+        }
+      }
+    },
+    "Ride": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vélo"
+          }
+        }
+      }
+    },
+    "Run": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Course"
+          }
+        }
+      }
+    },
+    "Same every day": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pareil tous les jours"
+          }
+        }
+      }
+    },
+    "Save": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enregistrer"
+          }
+        }
+      }
+    },
+    "Save as a recipe": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enregistrer comme recette"
+          }
+        }
+      }
+    },
+    "Save your meals and adjust the target to your activity": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enregistre tes repas et adapte l'objectif à ton activité"
+          }
+        }
+      }
+    },
+    "Saved as a recipe": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enregistrée comme recette"
+          }
+        }
+      }
+    },
+    "Saved to Popote": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envoyé à Popote"
+          }
+        }
+      }
+    },
+    "Say hello": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dis bonjour"
+          }
+        }
+      }
+    },
+    "Scan": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scanner"
+          }
+        }
+      }
+    },
+    "Scan a barcode": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scanner un code-barres"
+          }
+        }
+      }
+    },
+    "Scanned": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scanné"
+          }
+        }
+      }
+    },
+    "Search": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rechercher"
+          }
+        }
+      }
+    },
+    "Search a food": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chercher un aliment"
+          }
+        }
+      }
+    },
+    "Search a food or a product": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chercher un aliment ou un produit"
+          }
+        }
+      }
+    },
+    "Search a recipe or an ingredient": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chercher une recette ou un ingrédient"
+          }
+        }
+      }
+    },
+    "Send %lld changes to Bring!": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envoyer %lld changements à Bring!"
+          }
+        }
+      }
+    },
+    "Send the message in the Claude app, then come back here: the ingredients will show up to review.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envoie le message dans l'app Claude, puis reviens ici : les ingrédients s'afficheront pour que tu les vérifies."
+          }
+        }
+      }
+    },
+    "Send this list to Bring!, merged with what's already on it": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envoie cette liste à Bring!, fusionnée avec ce qui y est déjà"
+          }
+        }
+      }
+    },
+    "Sending to Popote…": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envoi à Popote…"
+          }
+        }
+      }
+    },
+    "Sent to \"%@\"": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envoyé sur « %@ »"
+          }
+        }
+      }
+    },
+    "Server": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serveur"
+          }
+        }
+      }
+    },
+    "Server error (%lld): %@": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur serveur (%1$lld) : %2$@"
+          }
+        }
+      }
+    },
+    "Session done": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Séance faite"
+          }
+        }
+      }
+    },
+    "Set the weight when the quantity can't be converted (\"1 bunch\", \"a handful\").": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indique le poids quand la quantité ne peut pas être convertie (« 1 botte », « une poignée »)."
+          }
+        }
+      }
+    },
+    "Set up": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Configurer"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réglages"
+          }
+        }
+      }
+    },
+    "Settings (no Health data)": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réglages (pas de données Santé)"
+          }
+        }
+      }
+    },
+    "Share": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partager"
+          }
+        }
+      }
+    },
+    "Share a recipe link from Instagram, YouTube, TikTok or a website.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partage un lien de recette depuis Instagram, YouTube, TikTok ou un site web."
+          }
+        }
+      }
+    },
+    "Share your Coach plan": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partage ton programme Coach"
+          }
+        }
+      }
+    },
+    "Show it to me, then add it with save_recipe.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Montre-la-moi, puis ajoute-la avec save_recipe."
+          }
+        }
+      }
+    },
+    "Signed up with Google or Apple? Set a password in the Bring! app first (Profile › Account).": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inscrit avec Google ou Apple ? Définis d'abord un mot de passe dans l'app Bring! (Profil › Compte)."
+          }
+        }
+      }
+    },
+    "Smaller deficit: long session": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Déficit réduit : longue séance"
+          }
+        }
+      }
+    },
+    "Snack": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Collation"
+          }
+        }
+      }
+    },
+    "Source": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Source"
+          }
+        }
+      }
+    },
+    "Spices & condiments": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Épices & condiments"
+          }
+        }
+      }
+    },
+    "Step": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Étape"
+          }
+        }
+      }
+    },
+    "Steps": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Étapes"
+          }
+        }
+      }
+    },
+    "Stop waiting": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrêter d’attendre"
+          }
+        }
+      }
+    },
+    "Strength": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Renfo"
+          }
+        }
+      }
+    },
+    "Surplus, larger on training days": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Surplus, plus grand les jours d’entraînement"
+          }
+        }
+      }
+    },
+    "Swim": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Natation"
+          }
+        }
+      }
+    },
+    "Sync with Bring!": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Synchroniser avec Bring!"
+          }
+        }
+      }
+    },
+    "Take into account": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tenir compte de"
+          }
+        }
+      }
+    },
+    "Tap to edit": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touche pour modifier"
+          }
+        }
+      }
+    },
+    "Target %lld kcal · %lld active kcal today": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objectif %1$lld kcal · %2$lld kcal actives aujourd'hui"
+          }
+        }
+      }
+    },
+    "Target reached: %@ kg": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objectif atteint : %@ kg"
+          }
+        }
+      }
+    },
+    "Target weight": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poids cible"
+          }
+        }
+      }
+    },
+    "Target weight reached: maintenance": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poids cible atteint : maintien"
+          }
+        }
+      }
+    },
+    "Targets": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objectifs"
+          }
+        }
+      }
+    },
+    "The calculation": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le calcul"
+          }
+        }
+      }
+    },
+    "The camera isn't available here. Type the barcode instead.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La caméra n'est pas disponible ici. Tape le code-barres à la place."
+          }
+        }
+      }
+    },
+    "The goal keeps going until you change it": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’objectif continue jusqu’à ce que tu le changes"
+          }
+        }
+      }
+    },
+    "The link contains a secret: anyone who has it can read your pantry and add recipes. Don't share it.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le lien contient un secret : quiconque l'a peut lire ton placard et ajouter des recettes. Ne le partage pas."
+          }
+        }
+      }
+    },
+    "The page couldn't be loaded (error %lld).": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La page n'a pas pu être chargée (erreur %lld)."
+          }
+        }
+      }
+    },
+    "The recipe from %@ will be ready when you open Popote.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La recette de %@ sera prête à l'ouverture de Popote."
+          }
+        }
+      }
+    },
+    "The week": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La semaine"
+          }
+        }
+      }
+    },
+    "Then automatic maintenance": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puis maintien automatique"
+          }
+        }
+      }
+    },
+    "Tip: in Instagram, YouTube or TikTok, tap Share › Popote. The recipe is imported in the background.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Astuce : dans Instagram, YouTube ou TikTok, touche Partager › Popote. La recette s'importe en arrière-plan."
+          }
+        }
+      }
+    },
+    "Title": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Titre"
+          }
+        }
+      }
+    },
+    "To add": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À ajouter"
+          }
+        }
+      }
+    },
+    "To check": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À vérifier"
+          }
+        }
+      }
+    },
+    "To complete": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À compléter"
+          }
+        }
+      }
+    },
+    "Today · %@": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aujourd'hui · %@"
+          }
+        }
+      }
+    },
+    "Today's macros": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les macros du jour"
+          }
+        }
+      }
+    },
+    "Today's targets": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mes objectifs du jour"
+          }
+        }
+      }
+    },
+    "Tonight you can cook": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ce soir, tu peux cuisiner"
+          }
+        }
+      }
+    },
+    "Total time": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temps total"
+          }
+        }
+      }
+    },
+    "Training (weekly average)": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entraînement (moyenne de la semaine)"
+          }
+        }
+      }
+    },
+    "Try again": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réessayer"
+          }
+        }
+      }
+    },
+    "Use my pantry (get_context).": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilise mon placard (get_context)."
+          }
+        }
+      }
+    },
+    "Use my pantry and what's left of today's targets (get_context).": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilise mon placard et ce qu'il reste de mes objectifs du jour (get_context)."
+          }
+        }
+      }
+    },
+    "Use what's left of today's targets (get_context).": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilise ce qu'il reste de mes objectifs du jour (get_context)."
+          }
+        }
+      }
+    },
+    "Used when Apple Health has no data. Today's active energy is always added on top.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilisé quand Apple Santé n'a pas de données. L'énergie active du jour est toujours ajoutée."
+          }
+        }
+      }
+    },
+    "Uses the race date set in Coach": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilise la date de course réglée dans Coach"
+          }
+        }
+      }
+    },
+    "Vegetarian": {
+      "extractionState": "stale",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Végé"
+          }
+        }
+      }
+    },
+    "Version": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version"
+          }
+        }
+      }
+    },
+    "Waiting for Claude…": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En attente de Claude…"
+          }
+        }
+      }
+    },
+    "Weight": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poids"
+          }
+        }
+      }
+    },
+    "What Popote learned": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ce que Popote a appris"
+          }
+        }
+      }
+    },
+    "What did you eat?": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qu'as-tu mangé ?"
+          }
+        }
+      }
+    },
+    "What would you like?": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qu'est-ce qui te ferait plaisir ?"
+          }
+        }
+      }
+    },
+    "When": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quand"
+          }
+        }
+      }
+    },
+    "Which list?": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quelle liste ?"
+          }
+        }
+      }
+    },
+    "With the Coach app, each day's target and carbs follow your planned sessions: more on long or hard days, less on rest days.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avec l’app Coach, l’objectif et les glucides de chaque jour suivent tes séances prévues : plus les jours longs ou durs, moins les jours de repos."
+          }
+        }
+      }
+    },
+    "With your training plan": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avec ton programme"
+          }
+        }
+      }
+    },
+    "Without a key, Popote reads the video description from the YouTube page, which can fail. Captions are read on the iPhone with Apple Intelligence when it's on.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sans clé, Popote lit la description sur la page YouTube, ce qui peut échouer. Les légendes sont lues sur l'iPhone avec Apple Intelligence quand elle est activée."
+          }
+        }
+      }
+    },
+    "Workout": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Séance"
+          }
+        }
+      }
+    },
+    "World foods": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Épicerie du monde"
+          }
+        }
+      }
+    },
+    "Write a recipe": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Écrire une recette"
+          }
+        }
+      }
+    },
+    "Wrong email or password.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "E-mail ou mot de passe incorrect."
+          }
+        }
+      }
+    },
+    "You have everything": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu as tout"
+          }
+        }
+      }
+    },
+    "YouTube Data API key (optional)": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clé API YouTube Data (facultatif)"
+          }
+        }
+      }
+    },
+    "Your goal": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ton objectif"
+          }
+        }
+      }
+    },
+    "Your list is empty": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta liste est vide"
+          }
+        }
+      }
+    },
+    "Your meal is ready to review": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ton repas est prêt à vérifier"
+          }
+        }
+      }
+    },
+    "Your recipes will live here": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tes recettes vivront ici"
+          }
+        }
+      }
+    },
+    "Your weight changes by %@ kg/week (goal: %@). Popote adds this correction to every day's target and checks again every week.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ton poids évolue de %1$@ kg/sem (objectif : %2$@). Popote ajoute cette correction à l’objectif de chaque jour et revérifie chaque semaine."
+          }
+        }
+      }
+    },
+    "^[%lld ingredient](inflect: true)": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "^[%lld ingrédient](inflect: true)"
+          }
+        }
+      }
+    },
+    "^[%lld ingredient](inflect: true) missing": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "^[%lld ingrédient](inflect: true) manquant"
+          }
+        }
+      }
+    },
+    "^[%lld ingredient](inflect: true) not counted yet. Tap to complete.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "^[%lld ingrédient](inflect: true) pas encore compté. Touche pour compléter."
+          }
+        }
+      }
+    },
+    "^[%lld serving](inflect: true)": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "^[%lld portion](inflect: true)"
+          }
+        }
+      }
+    },
+    "already there": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "déjà là"
+          }
+        }
+      }
+    },
+    "breakfast": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "petit-déjeuner"
+          }
+        }
+      }
+    },
+    "bunch": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "botte"
+          }
+        }
+      }
+    },
+    "bunches": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "bottes"
+          }
+        }
+      }
+    },
+    "can": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "boîte"
+          }
+        }
+      }
+    },
+    "cans": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "boîtes"
+          }
+        }
+      }
+    },
+    "clove": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "gousse"
+          }
+        }
+      }
+    },
+    "cloves": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "gousses"
+          }
+        }
+      }
+    },
+    "cup": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "tasse"
+          }
+        }
+      }
+    },
+    "cups": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "tasses"
+          }
+        }
+      }
+    },
+    "dinner": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "dîner"
+          }
+        }
+      }
+    },
+    "from your weight trend": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "d’après la tendance de ton poids"
+          }
+        }
+      }
+    },
+    "g": {
+      "shouldTranslate": false
+    },
+    "handful": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "poignée"
+          }
+        }
+      }
+    },
+    "handfuls": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "poignées"
+          }
+        }
+      }
+    },
+    "https://www.instagram.com/reel/…": {
+      "shouldTranslate": false
+    },
+    "kcal": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "kcal"
+          }
+        }
+      }
+    },
+    "kcal (estimated)": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "kcal (estimées)"
+          }
+        }
+      }
+    },
+    "kcal / serving": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "kcal / portion"
+          }
+        }
+      }
+    },
+    "kcal/day correction": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "kcal/j de correction"
+          }
+        }
+      }
+    },
+    "left": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "restantes"
+          }
+        }
+      }
+    },
+    "lunch": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "déjeuner"
+          }
+        }
+      }
+    },
+    "min": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "min"
+          }
+        }
+      }
+    },
+    "outside workouts · Health": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "hors séances · Santé"
+          }
+        }
+      }
+    },
+    "over": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "en trop"
+          }
+        }
+      }
+    },
+    "p": {
+      "comment": "The letter \"p\" in the Marmite logo.",
+      "isCommentAutoGenerated": true
+    },
+    "packet": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sachet"
+          }
+        }
+      }
+    },
+    "packets": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sachets"
+          }
+        }
+      }
+    },
+    "pinch": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "pincée"
+          }
+        }
+      }
+    },
+    "pinches": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "pincées"
+          }
+        }
+      }
+    },
+    "planned": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "prévu"
+          }
+        }
+      }
+    },
+    "planned in Coach · estimated": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "prévu dans Coach · estimé"
+          }
+        }
+      }
+    },
+    "real · Apple Health": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "réel · Apple Santé"
+          }
+        }
+      }
+    },
+    "slice": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "tranche"
+          }
+        }
+      }
+    },
+    "slices": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "tranches"
+          }
+        }
+      }
+    },
+    "snack": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "goûter"
+          }
+        }
+      }
+    },
+    "tbsp": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "c. à s."
+          }
+        }
+      }
+    },
+    "the rest · never below 0.8 g/kg": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "le reste · jamais sous 0,8 g/kg"
+          }
+        }
+      }
+    },
+    "to add": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "à ajouter"
+          }
+        }
+      }
+    },
+    "to update": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "à modifier"
+          }
+        }
+      }
+    },
+    "trend": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "tendance"
+          }
+        }
+      }
+    },
+    "tsp": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "c. à c."
+          }
+        }
+      }
+    },
+    "« %@ »": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "« %@ »"
+          }
+        }
+      }
+    },
+    "≈ %lld g": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "≈ %lld g"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.1"
+}

@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.db
+*.db-*
+*.log
+.wrangler/
+.build/
+.build-device/
+.build-log.txt
+.build-device-log.txt
+xcuserdata/
+*.xcuserstate
+.DS_Store
+.build-device.log

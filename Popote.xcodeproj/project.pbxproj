@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D30000000000000000000044 /* PopoteShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D30000000000000000000002 /* PopoteShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D30000000000000000000045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30000000000000000000060 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D30000000000000000000140;
+			remoteInfo = PopoteShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D30000000000000000000043 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D30000000000000000000044 /* PopoteShare.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D30000000000000000000001 /* Popote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Popote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30000000000000000000002 /* PopoteShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PopoteShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30000000000000000000003 /* Popote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Popote.entitlements; sourceTree = "<group>"; };
+		D30000000000000000000004 /* Popote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Popote-Info.plist"; sourceTree = "<group>"; };
+		D30000000000000000000005 /* PopoteShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PopoteShare.entitlements; sourceTree = "<group>"; };
+		D30000000000000000000006 /* PopoteShare-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PopoteShare-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D30000000000000000000010 /* Popote */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Popote;
+			sourceTree = "<group>";
+		};
+		D30000000000000000000011 /* PopoteShare */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PopoteShare;
+			sourceTree = "<group>";
+		};
+		D30000000000000000000012 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D30000000000000000000020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30000000000000000000120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D30000000000000000000030 = {
+			isa = PBXGroup;
+			children = (
+				D30000000000000000000010 /* Popote */,
+				D30000000000000000000011 /* PopoteShare */,
+				D30000000000000000000012 /* Shared */,
+				D30000000000000000000003 /* Popote.entitlements */,
+				D30000000000000000000004 /* Popote-Info.plist */,
+				D30000000000000000000005 /* PopoteShare.entitlements */,
+				D30000000000000000000006 /* PopoteShare-Info.plist */,
+				D30000000000000000000031 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D30000000000000000000031 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D30000000000000000000001 /* Popote.app */,
+				D30000000000000000000002 /* PopoteShare.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D30000000000000000000040 /* Popote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D30000000000000000000050 /* Build configuration list for PBXNativeTarget "Popote" */;
+			buildPhases = (
+				D30000000000000000000041 /* Sources */,
+				D30000000000000000000020 /* Frameworks */,
+				D30000000000000000000042 /* Resources */,
+				D30000000000000000000043 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D30000000000000000000046 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D30000000000000000000010 /* Popote */,
+				D30000000000000000000012 /* Shared */,
+			);
+			name = Popote;
+			productName = Popote;
+			productReference = D30000000000000000000001 /* Popote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D30000000000000000000140 /* PopoteShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D30000000000000000000150 /* Build configuration list for PBXNativeTarget "PopoteShare" */;
+			buildPhases = (
+				D30000000000000000000141 /* Sources */,
+				D30000000000000000000120 /* Frameworks */,
+				D30000000000000000000142 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D30000000000000000000011 /* PopoteShare */,
+				D30000000000000000000012 /* Shared */,
+			);
+			name = PopoteShare;
+			productName = PopoteShare;
+			productReference = D30000000000000000000002 /* PopoteShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D30000000000000000000060 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					D30000000000000000000040 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					D30000000000000000000140 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+				};
+			};
+			buildConfigurationList = D30000000000000000000061 /* Build configuration list for PBXProject "Popote" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				fr,
+				Base,
+			);
+			mainGroup = D30000000000000000000030;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D30000000000000000000031 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D30000000000000000000040 /* Popote */,
+				D30000000000000000000140 /* PopoteShare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D30000000000000000000042 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30000000000000000000142 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D30000000000000000000041 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30000000000000000000141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D30000000000000000000046 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D30000000000000000000140 /* PopoteShare */;
+			targetProxy = D30000000000000000000045 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D30000000000000000000070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-enable-bare-slash-regex";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D30000000000000000000071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				OTHER_SWIFT_FLAGS = "-enable-bare-slash-regex";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D30000000000000000000072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Popote.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T65CHC989U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Popote-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Popote;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Popote uses the camera to scan product barcodes.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Popote reads your active energy, resting energy and weight to set your daily calorie and protein targets.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Popote saves the meals you log (calories, protein, carbs, fat) to Apple Health.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				POPOTE_SERVER_URL = "https://popote-server.leobrunet91-39d.workers.dev";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leobrunet.popote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D30000000000000000000073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Popote.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T65CHC989U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Popote-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Popote;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Popote uses the camera to scan product barcodes.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Popote reads your active energy, resting energy and weight to set your daily calorie and protein targets.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Popote saves the meals you log (calories, protein, carbs, fat) to Apple Health.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				POPOTE_SERVER_URL = "https://popote-server.leobrunet91-39d.workers.dev";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leobrunet.popote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D30000000000000000000172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PopoteShare.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T65CHC989U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PopoteShare-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Popote;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leobrunet.popote.share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D30000000000000000000173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PopoteShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T65CHC989U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PopoteShare-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Popote;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leobrunet.popote.share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D30000000000000000000050 /* Build configuration list for PBXNativeTarget "Popote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30000000000000000000072 /* Debug */,
+				D30000000000000000000073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D30000000000000000000061 /* Build configuration list for PBXProject "Popote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30000000000000000000070 /* Debug */,
+				D30000000000000000000071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D30000000000000000000150 /* Build configuration list for PBXNativeTarget "PopoteShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30000000000000000000172 /* Debug */,
+				D30000000000000000000173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D30000000000000000000060 /* Project object */;
+}

@@ -1,0 +1,11 @@
+name = "popote-server"
+main = "src/worker.ts"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+preview_urls = false
+
+[[d1_databases]]
+binding = "DB"
+database_name = "popote"
+database_id = "b7565304-e5ae-4f8c-9710-cb831f4b0eb6"

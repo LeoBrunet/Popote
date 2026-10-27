@@ -1,3 +1,4 @@
+import PhotosUI
 import SwiftUI
 
 /// "Check the import": title, servings, ingredient lines and steps, editable as text.
@@ -13,12 +14,21 @@ struct RecipeEditView: View {
     @State private var caption = ""
     @State private var structuring = false
     @State private var picking = false
+    @State private var photo: UIImage?          // newly picked, saved on Save
+    @State private var photoRemoved = false
+    @State private var photoItem: PhotosPickerItem?
+    @State private var showLibrary = false
+    @State private var showCamera = false
     /// Lines added from a product or food, with their text at that moment: kept as is (with their nutrition) unless retyped.
     @State private var picked: [UUID: String] = [:]
 
     var body: some View {
         NavigationStack {
             Form {
+                Section { photoSection }
+                    .listRowInsets(EdgeInsets())
+                    .listRowBackground(Color.clear)
+
                 Section {
                     TextField("Title", text: $title, axis: .vertical)
                     Stepper("^[\(servings) serving](inflect: true)", value: $servings, in: 1...24)
@@ -95,6 +105,17 @@ struct RecipeEditView: View {
                 ToolbarItem(placement: .confirmationAction) { Button("Save", action: save).bold() }
             }
             .onAppear(perform: load)
+            .photosPicker(isPresented: $showLibrary, selection: $photoItem, matching: .images)
+            .fullScreenCover(isPresented: $showCamera) {
+                CameraPicker { image in setPhoto(image) }.ignoresSafeArea()
+            }
+            .onChange(of: photoItem) { _, item in
+                guard let item else { return }
+                Task {
+                    if let data = try? await item.loadTransferable(type: Data.self), let image = UIImage(data: data) { setPhoto(image) }
+                    photoItem = nil
+                }
+            }
             .sheet(isPresented: $picking) {
                 IngredientPickerSheet { line in
                     picked[line.id] = line.raw
@@ -102,6 +123,48 @@ struct RecipeEditView: View {
                 }
             }
         }
+    }
+
+    private var hasPhoto: Bool { photo != nil || (!photoRemoved && (recipe.imageData != nil || recipe.imageURL != nil)) }
+
+    /// Current picture with a menu to take, choose or remove one.
+    private var photoSection: some View {
+        ZStack(alignment: .bottomTrailing) {
+            Group {
+                if let photo {
+                    Image(uiImage: photo).resizable().scaledToFill()
+                } else if photoRemoved {
+                    RecipePhoto(recipe: Recipe(title: "", source: .manual))
+                } else {
+                    RecipePhoto(recipe: recipe)
+                }
+            }
+            .frame(height: 180)
+            .frame(maxWidth: .infinity)
+            .clipShape(RoundedRectangle(cornerRadius: Theme.radius, style: .continuous))
+
+            Menu {
+                if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                    Button { showCamera = true } label: { Label("Take a photo", systemImage: "camera") }
+                }
+                Button { showLibrary = true } label: { Label("Choose from library", systemImage: "photo.on.rectangle") }
+                if hasPhoto {
+                    Button(role: .destructive) { photo = nil; photoRemoved = true } label: { Label("Remove the photo", systemImage: "trash") }
+                }
+            } label: {
+                Label(hasPhoto ? "Change the photo" : "Add a photo", systemImage: "camera.fill")
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 12).padding(.vertical, 8)
+                    .background(.black.opacity(0.55), in: Capsule())
+            }
+            .padding(DS.Spacing.s)
+        }
+    }
+
+    private func setPhoto(_ image: UIImage) {
+        photo = image
+        photoRemoved = false
     }
 
     private func load() {
@@ -136,6 +199,13 @@ struct RecipeEditView: View {
         recipe.steps = steps.filter { !$0.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
         recipe.rawText = caption.isEmpty ? nil : caption
         recipe.needsReview = false
+        if let photo, let data = photo.mealJPEG() {
+            recipe.imageData = data
+        } else if photoRemoved {
+            recipe.imageData = nil
+            recipe.imageURL = nil
+        }
+        try? recipe.modelContext?.save()
         dismiss()
     }
 }

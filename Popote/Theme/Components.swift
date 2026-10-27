@@ -6,7 +6,8 @@ struct RecipePhoto: View {
     var symbolSize: CGFloat = 40
 
     var body: some View {
-        Group {
+        // The picture fills the frame it's given and never sizes it (wide photos would widen cards).
+        Color.clear.overlay {
             if let data = recipe.imageData, let image = UIImage(data: data) {
                 Image(uiImage: image).resizable().scaledToFill()
             } else if let url = recipe.imageURL.flatMap(URL.init(string:)) {
@@ -18,6 +19,7 @@ struct RecipePhoto: View {
             }
         }
         .clipped()
+        .contentShape(Rectangle())
     }
 
     private var placeholder: some View {

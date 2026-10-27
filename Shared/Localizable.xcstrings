@@ -384,6 +384,16 @@
         }
       }
     },
+    "Add a photo": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter une photo"
+          }
+        }
+      }
+    },
     "Add a recipe": {
       "localizations": {
         "fr": {
@@ -792,6 +802,16 @@
         }
       }
     },
+    "Change the photo": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Changer la photo"
+          }
+        }
+      }
+    },
     "Changed": {
       "localizations": {
         "fr": {
@@ -868,6 +888,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Choisir une photo"
+          }
+        }
+      }
+    },
+    "Choose from library": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisir dans la photothèque"
           }
         }
       }
@@ -2507,6 +2537,16 @@
         }
       }
     },
+    "Remove the photo": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retirer la photo"
+          }
+        }
+      }
+    },
     "Rest day": {
       "localizations": {
         "fr": {
@@ -3003,6 +3043,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Synchroniser avec Bring!"
+          }
+        }
+      }
+    },
+    "Take a photo": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prendre une photo"
           }
         }
       }

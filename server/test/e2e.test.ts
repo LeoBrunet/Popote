@@ -49,6 +49,16 @@ describe("app ↔ server ↔ Claude", () => {
       body: JSON.stringify({
         language: "fr", today: "2026-10-27", pantry: ["Riz", "Œufs"], recipes: ["Dahl de lentilles"],
         targets: { kcal: 2200, protein: 126, carbs: 259, fat: 73 }, eaten: { kcal: 720, protein: 37, carbs: 86, fat: 23 },
+        journal: [
+          { date: "2026-10-26T20:05", meal: "dinner", title: "Roast chicken", amount: "1 serving", recipe: "Roast chicken", kcal: 771, protein: 50, carbs: 62, fat: 37,
+            ingredients: [{ name: "Mozzarella", quantity: 50, unit: "g", grams: 50, kcal: 125 }, { name: "Skyr", grams: 150, kcal: 95, product: "Siggi's · Skyr nature" }] },
+          { date: "2026-10-27T12:30", meal: "lunch", title: "Dahl de lentilles", amount: "1 serving", kcal: 720, protein: 37, carbs: 86, fat: 23 },
+          { date: "2026-10-01T12:00", meal: "lunch", title: "Old salad", kcal: 400, protein: 20, carbs: 30, fat: 20 },
+        ],
+        recipeDetails: [
+          { title: "Dahl de lentilles", servings: 2, minutes: 30, perServing: { kcal: 720, protein: 37, carbs: 86, fat: 23 },
+            ingredients: [{ name: "Lentilles corail", quantity: 250, unit: "g", grams: 250, kcal: 860 }], steps: ["Rincer les lentilles.", "Cuire 20 min."] },
+        ],
       }),
     });
 
@@ -64,11 +74,24 @@ describe("app ↔ server ↔ Claude", () => {
     const client = new Client({ name: "test-claude", version: "1.0.0" });
     await client.connect(new StreamableHTTPClientTransport(new URL(connectorUrl)));
     const tools = (await client.listTools()).tools.map((t) => t.name).sort();
-    expect(tools).toEqual(["get_context", "get_meal_request", "save_meal_analysis", "save_recipe"]);
+    expect(tools).toEqual(["get_context", "get_journal", "get_meal_request", "get_recipes", "save_meal_analysis", "save_recipe"]);
 
     const context = JSON.parse(((await client.callTool({ name: "get_context", arguments: {} })).content as any)[0].text);
     expect(context.remainingToday.kcal).toBe(1480);
     expect(context.pendingMealRequests[0].id).toBe(requestId);
+    expect(context.journal).toBeUndefined();
+    expect(context.journalEntries).toBe(3);
+
+    // Claude reads the journal and the recipes when the user cites them.
+    const read = async (name: string, args: object) => ((await client.callTool({ name, arguments: args })).content as any)[0].text as string;
+    const week = JSON.parse(await read("get_journal", {}));
+    expect(week.map((d: any) => d.day)).toEqual(["2026-10-26", "2026-10-27"]);
+    expect(week[0].meals[0].time).toBe("20:05");
+    const skyr = JSON.parse(await read("get_journal", { query: "siggis" }));
+    expect(skyr[0].meals[0].title).toBe("Roast chicken");
+    expect(JSON.parse(await read("get_journal", { from: "2026-10-01", to: "2026-10-01" }))[0].total.kcal).toBe(400);
+    expect(JSON.parse(await read("get_recipes", {}))[0].kcalPerServing).toBe(720);
+    expect(JSON.parse(await read("get_recipes", { query: "lentilles" }))[0].steps).toHaveLength(2);
 
     const meal = await client.callTool({ name: "get_meal_request", arguments: {} });
     const content = meal.content as any[];

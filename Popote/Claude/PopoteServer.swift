@@ -35,6 +35,44 @@ struct PopoteServer {
         var recipes: [String]
         var targets: Macros
         var eaten: Macros
+        var goal: String?
+        var journal: [JournalItem] = []
+        var recipeDetails: [RecipeItem] = []
+
+        struct Ingredient: Encodable {
+            var name: String
+            var quantity: Double?
+            var unit: String?
+            var grams: Double?
+            var kcal: Double?
+            var product: String?
+        }
+
+        struct JournalItem: Encodable {
+            var date: String
+            var meal: String
+            var title: String
+            var amount: String?
+            var recipe: String?
+            var kcal: Double
+            var protein: Double
+            var carbs: Double
+            var fat: Double
+            var ingredients: [Ingredient]?
+        }
+
+        struct RecipeItem: Encodable {
+            var title: String
+            var servings: Int
+            var minutes: Int?
+            var source: String?
+            var url: String?
+            var createdAt: String?
+            var inShoppingList: Bool?
+            var perServing: Macros?
+            var ingredients: [Ingredient]
+            var steps: [String]
+        }
     }
 
     struct Inbox: Decodable {

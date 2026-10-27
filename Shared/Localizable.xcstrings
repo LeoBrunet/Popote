@@ -1915,6 +1915,16 @@
         }
       }
     },
+    "My products": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mes produits"
+          }
+        }
+      }
+    },
     "My recipes": {
       "localizations": {
         "fr": {
@@ -2012,6 +2022,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Aucun produit trouvé."
+          }
+        }
+      }
+    },
+    "No products yet": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas encore de produits"
           }
         }
       }
@@ -2347,6 +2367,16 @@
         }
       }
     },
+    "Products you scan or pick show up here.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les produits que tu scannes ou choisis apparaissent ici."
+          }
+        }
+      }
+    },
     "Protein": {
       "localizations": {
         "fr": {
@@ -2633,6 +2663,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Scanner un code-barres"
+          }
+        }
+      }
+    },
+    "Scan, search or pick a product": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scanner, chercher ou choisir un produit"
           }
         }
       }

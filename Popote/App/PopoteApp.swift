@@ -49,6 +49,15 @@ struct RootView: View {
                 .presentationDetents([.large])
         }
         .onChange(of: scenePhase, initial: true) { _, phase in
+            if phase == .background {
+                // Leaving for Claude (or anywhere): share what was just logged so Claude can read it.
+                let task = UIApplication.shared.beginBackgroundTask()
+                Task {
+                    await claude.shareContext(context: context, health: health)
+                    UIApplication.shared.endBackgroundTask(task)
+                }
+                return
+            }
             guard phase == .active else { return }
             imports.processInbox(context: context)
             Task {

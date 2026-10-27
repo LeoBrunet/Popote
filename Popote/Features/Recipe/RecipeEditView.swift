@@ -12,6 +12,9 @@ struct RecipeEditView: View {
     @State private var steps: [RecipeStep] = []
     @State private var caption = ""
     @State private var structuring = false
+    @State private var picking = false
+    /// Lines added from a product or food, with their text at that moment: kept as is (with their nutrition) unless retyped.
+    @State private var picked: [UUID: String] = [:]
 
     var body: some View {
         NavigationStack {
@@ -32,6 +35,8 @@ struct RecipeEditView: View {
                         HStack {
                             if line.guessed {
                                 Image(systemName: "sparkles").foregroundStyle(Theme.carbs).font(.caption)
+                            } else if line.product != nil {
+                                Image(systemName: "barcode").foregroundStyle(.secondary).font(.caption)
                             }
                             TextField("200 g flour", text: $line.raw, axis: .vertical)
                         }
@@ -40,6 +45,7 @@ struct RecipeEditView: View {
                     .onDelete { lines.remove(atOffsets: $0) }
                     .onMove { lines.move(fromOffsets: $0, toOffset: $1) }
                     Button { lines.append(IngredientLine(raw: "", name: "")) } label: { Label("Add an ingredient", systemImage: "plus") }
+                    Button { picking = true } label: { Label("Scan, search or pick a product", systemImage: "barcode.viewfinder") }
                 } header: {
                     Text("Ingredients")
                 } footer: {
@@ -89,6 +95,12 @@ struct RecipeEditView: View {
                 ToolbarItem(placement: .confirmationAction) { Button("Save", action: save).bold() }
             }
             .onAppear(perform: load)
+            .sheet(isPresented: $picking) {
+                IngredientPickerSheet { line in
+                    picked[line.id] = line.raw
+                    lines.append(line)
+                }
+            }
         }
     }
 
@@ -111,6 +123,7 @@ struct RecipeEditView: View {
             let raw = line.raw.trimmingCharacters(in: .whitespacesAndNewlines)
             guard !raw.isEmpty else { return nil }
             // Re-read edited lines; keep the nutrition match when the line didn't change.
+            if picked[line.id] == raw { return line }
             if let previous = old[line.id], previous.raw == raw {
                 var kept = previous
                 kept.guessed = false

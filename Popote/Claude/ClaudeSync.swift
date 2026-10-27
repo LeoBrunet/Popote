@@ -172,9 +172,18 @@ final class ClaudeSync {
         return line
     }
 
+    /// Shares the context only (no inbox), e.g. when leaving Popote for Claude: Claude then sees what was just logged.
+    func shareContext(context: ModelContext, health: HealthService) async {
+        guard token != nil else { return }
+        do { try await api.putContext(makeContext(context, health: health)) } catch {
+            log.error("shareContext: \(error.localizedDescription, privacy: .public)")
+        }
+    }
+
     private func makeContext(_ context: ModelContext, health: HealthService) throws -> PopoteServer.Context {
         let pantry = try context.fetch(FetchDescriptor<PantryItem>()).map(\.name)
-        let recipes = try context.fetch(FetchDescriptor<Recipe>()).map(\.title)
+        let allRecipes = try context.fetch(FetchDescriptor<Recipe>(sortBy: [SortDescriptor(\.title)]))
+        let recipes = allRecipes.map(\.title)
         let start = Calendar.current.startOfDay(for: .now)
         let eaten = try context.fetch(FetchDescriptor<JournalEntry>(predicate: #Predicate { $0.date >= start }))
             .reduce(Nutrition.zero) { $0 + $1.nutrition }
@@ -188,6 +197,46 @@ final class ClaudeSync {
             pantry: pantry,
             recipes: recipes,
             targets: .init(kcal: targets.kcal, protein: targets.protein, carbs: targets.carbs, fat: targets.fat),
-            eaten: .init(kcal: eaten.kcal, protein: eaten.protein, carbs: eaten.carbs, fat: eaten.fat))
+            eaten: .init(kcal: eaten.kcal, protein: eaten.protein, carbs: eaten.carbs, fat: eaten.fat),
+            goal: GoalSettings.current.title,
+            journal: try journalItems(context, recipes: allRecipes),
+            recipeDetails: allRecipes.map(Self.recipeItem))
+    }
+
+    /// The last 60 days of the journal, with the ingredients eaten when known.
+    private func journalItems(_ context: ModelContext, recipes: [Recipe]) throws -> [PopoteServer.Context.JournalItem] {
+        let since = Calendar.current.date(byAdding: .day, value: -60, to: Calendar.current.startOfDay(for: .now))!
+        let entries = try context.fetch(FetchDescriptor<JournalEntry>(predicate: #Predicate { $0.date >= since }, sortBy: [SortDescriptor(\.date)]))
+        let titles = Dictionary(recipes.map { ($0.id, $0.title) }, uniquingKeysWith: { a, _ in a })
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm"
+        return entries.suffix(3000).map { entry in
+            let lines = entry.lines
+            return .init(date: formatter.string(from: entry.date), meal: entry.meal.rawValue, title: entry.title,
+                         amount: entry.detail.isEmpty ? nil : entry.detail, recipe: entry.recipeID.flatMap { titles[$0] },
+                         kcal: Self.tidy(entry.kcal), protein: Self.tidy(entry.protein), carbs: Self.tidy(entry.carbs), fat: Self.tidy(entry.fat),
+                         ingredients: lines.isEmpty ? nil : lines.prefix(80).map(Self.ingredient))
+        }
+    }
+
+    private static func recipeItem(_ recipe: Recipe) -> PopoteServer.Context.RecipeItem {
+        let n = NutritionEngine.evaluate(recipe).perServing
+        return .init(title: recipe.title, servings: recipe.servings, minutes: recipe.minutes, source: recipe.source.rawValue,
+                     url: recipe.sourceURL.isEmpty ? nil : recipe.sourceURL,
+                     createdAt: ISO8601DateFormatter().string(from: recipe.createdAt), inShoppingList: recipe.inShoppingList,
+                     perServing: .init(kcal: tidy(n.kcal), protein: tidy(n.protein), carbs: tidy(n.carbs), fat: tidy(n.fat)),
+                     ingredients: recipe.ingredients.prefix(80).map(ingredient),
+                     steps: recipe.steps.prefix(60).map(\.text))
+    }
+
+    /// One decimal, never negative (the server rejects negative macros).
+    private static func tidy(_ value: Double) -> Double { (max(value, 0) * 10).rounded() / 10 }
+
+    private static func ingredient(_ line: IngredientLine) -> PopoteServer.Context.Ingredient {
+        let item = NutritionEngine.evaluate(line)
+        let product = line.product.map { [$0.brand, $0.name].compactMap { $0 }.joined(separator: " · ") }
+        return .init(name: line.name.isEmpty ? line.raw : line.name, quantity: line.quantity, unit: line.unit,
+                     grams: item.grams.map { ($0 * 10).rounded() / 10 }, kcal: line.ignored ? nil : item.nutrition.kcal.rounded(), product: product)
     }
 }

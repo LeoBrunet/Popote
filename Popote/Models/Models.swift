@@ -54,6 +54,16 @@ struct IngredientLine: Codable, Hashable, Identifiable {
     var gramsOverride: Double?      // weight typed by the user
     var ignored = false             // counted as 0 kcal (water, salt…)
     var estimate: EstimatedNutrition?   // Claude's estimate for this line, used when no food matches
+
+    /// The same ingredient for `factor` times the amount (servings eaten vs. the recipe's).
+    func scaled(by factor: Double) -> IngredientLine {
+        guard factor != 1 else { return self }
+        var line = self
+        line.quantity = quantity.map { $0 * factor }
+        line.gramsOverride = gramsOverride.map { $0 * factor }
+        line.estimate = estimate.map { EstimatedNutrition(kcal: $0.kcal * factor, protein: $0.protein * factor, carbs: $0.carbs * factor, fat: $0.fat * factor) }
+        return line
+    }
 }
 
 /// Nutrition of one ingredient line as estimated by Claude (for the line's amount, not per 100 g).
@@ -174,6 +184,7 @@ final class JournalEntry {
     var healthUUID: String?
     var amount: Double?             // servings or grams logged, to rescale when edited
     var amountUnit: String?         // "serving" or "g"
+    var linesData: Data = Data()    // ingredients as eaten (recipes, Claude meals), editable afterwards
 
     init(date: Date, meal: Meal, title: String, detail: String, nutrition: Nutrition) {
         self.date = date
@@ -197,6 +208,11 @@ final class JournalEntry {
         detail = unit == "g" ? "\(Int(value.rounded())) g" : Units.servings(value)
     }
     var nutrition: Nutrition { Nutrition(kcal: kcal, protein: protein, carbs: carbs, fat: fat) }
+
+    var lines: [IngredientLine] {
+        get { linesData.isEmpty ? [] : (try? JSONDecoder().decode([IngredientLine].self, from: linesData)) ?? [] }
+        set { linesData = newValue.isEmpty ? Data() : (try? JSONEncoder().encode(newValue)) ?? Data() }
+    }
 }
 
 @Model

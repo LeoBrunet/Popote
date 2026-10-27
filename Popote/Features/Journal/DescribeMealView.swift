@@ -191,6 +191,7 @@ struct DescribeMealView: View {
         let name = draft.title.trimmingCharacters(in: .whitespaces).isEmpty ? String(localized: "Meal") : draft.title
         let entry = JournalEntry(date: date, meal: draft.meal, title: name, detail: "", nutrition: total)
         entry.setAmount(1, unit: "serving")
+        entry.lines = draft.lines
         context.insert(entry)
         context.delete(draft)
         Task {

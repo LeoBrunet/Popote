@@ -25,6 +25,16 @@ struct AddFoodSheet: View {
         let perServing: Nutrition?     // recipes
         var servingGrams: Double?
         var recipeID: UUID?
+        var product: ProductSnapshot?   // scanned product, can also go into a recipe
+        var foodID: String?             // generic food, same
+
+        /// Ingredient line for `grams` of this product or food (to add it to a recipe or keep it with the meal).
+        func line(grams: Double) -> IngredientLine? {
+            guard product != nil || foodID != nil else { return nil }
+            let name = product?.name ?? title
+            return IngredientLine(raw: "\(Units.formatNumber(grams)) g \(name)", name: name, quantity: grams, unit: "g",
+                                  foodID: foodID, product: product, gramsOverride: grams)
+        }
     }
 
     var body: some View {
@@ -80,7 +90,7 @@ struct AddFoodSheet: View {
                     if let product = try? await OpenFoodFacts.product(barcode: code) {
                         pending = Pending(title: [product.brand, product.name].compactMap { $0 }.joined(separator: " · "),
                                           per100g: Nutrition(kcal: product.kcal, protein: product.protein, carbs: product.carbs, fat: product.fat),
-                                          perServing: nil, servingGrams: product.servingGrams)
+                                          perServing: nil, servingGrams: product.servingGrams, product: product)
                     } else {
                         scanError = String(localized: "Product \(code) isn't in Open Food Facts.")
                     }
@@ -93,7 +103,7 @@ struct AddFoodSheet: View {
     private var foodList: some View {
         List(FoodTable.search(query).filter { !$0.staple }) { food in
             Button {
-                pending = Pending(title: food.name, per100g: food.per100g, perServing: nil, servingGrams: food.pieceGrams)
+                pending = Pending(title: food.name, per100g: food.per100g, perServing: nil, servingGrams: food.pieceGrams, foodID: food.id)
             } label: {
                 HStack {
                     Text(food.name).foregroundStyle(Color.primary)
@@ -110,6 +120,11 @@ struct AddFoodSheet: View {
         let entry = JournalEntry(date: date, meal: meal, title: item.title, detail: "", nutrition: nutrition)
         entry.setAmount(amount, unit: unit)
         entry.recipeID = item.recipeID
+        if let recipe = recipes.first(where: { $0.id == item.recipeID }) {
+            entry.lines = recipe.ingredients.map { $0.scaled(by: amount / Double(max(recipe.servings, 1))) }
+        } else if let line = item.line(grams: amount) {
+            entry.lines = [line]
+        }
         context.insert(entry)
         Task {
             entry.healthUUID = await health.save(entry)
@@ -124,6 +139,8 @@ private struct QuantitySheet: View {
     @Environment(\.dismiss) private var dismiss
     @State private var servings = 1.0
     @State private var grams = ""
+    @State private var pickingRecipe = false
+    @State private var addedTo: [String] = []
 
     var body: some View {
         NavigationStack {
@@ -142,6 +159,28 @@ private struct QuantitySheet: View {
                     }
                 }
                 Section { MacroSummary(nutrition: nutrition, caption: "kcal") }
+                if item.line(grams: 1) != nil {
+                    Section {
+                        if !addedTo.isEmpty {
+                            Label(String(localized: "Added to \(addedTo.formatted(.list(type: .and)))"), systemImage: "checkmark.circle.fill")
+                                .foregroundStyle(Theme.herb)
+                        }
+                        Button { pickingRecipe = true } label: {
+                            Label(addedTo.isEmpty ? "Add to a recipe" : "Add to another recipe", systemImage: "book.closed")
+                        }
+                        .disabled(gramsValue <= 0)
+                    } footer: {
+                        Text("Adds \(Units.formatNumber(gramsValue)) g to a recipe's ingredients. You can still log it afterwards.")
+                    }
+                }
+            }
+            .sheet(isPresented: $pickingRecipe) {
+                RecipePickerSheet { recipe in
+                    if let line = item.line(grams: gramsValue) {
+                        recipe.ingredients.append(line)
+                        addedTo.append(recipe.title)
+                    }
+                }
             }
             .navigationTitle(item.title)
             .navigationBarTitleDisplayMode(.inline)
@@ -157,7 +196,7 @@ private struct QuantitySheet: View {
             }
             .onAppear { if let serving = item.servingGrams { grams = "\(Int(serving))" } else { grams = "100" } }
         }
-        .presentationDetents([.medium])
+        .presentationDetents(item.line(grams: 1) != nil ? [.large] : [.medium])
     }
 
     private var gramsValue: Double { Double(grams.replacingOccurrences(of: ",", with: ".")) ?? 0 }
@@ -165,5 +204,37 @@ private struct QuantitySheet: View {
     private var nutrition: Nutrition {
         if let perServing = item.perServing { return perServing * servings }
         return (item.per100g ?? .zero) * (gramsValue / 100)
+    }
+}
+
+/// Pick one of your recipes (to add an ingredient to it).
+struct RecipePickerSheet: View {
+    let pick: (Recipe) -> Void
+    @Environment(\.dismiss) private var dismiss
+    @Query(sort: \Recipe.title) private var recipes: [Recipe]
+    @State private var query = ""
+
+    var body: some View {
+        NavigationStack {
+            List(recipes.filter { query.isEmpty || $0.title.localizedCaseInsensitiveContains(query) }) { recipe in
+                Button {
+                    pick(recipe)
+                    dismiss()
+                } label: {
+                    HStack {
+                        RecipePhoto(recipe: recipe, symbolSize: 14).frame(width: 44, height: 44).clipShape(RoundedRectangle(cornerRadius: 8))
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(recipe.title).foregroundStyle(Color.primary).lineLimit(2)
+                            Text("^[\(recipe.ingredients.count) ingredient](inflect: true)").font(.caption).foregroundStyle(.secondary)
+                        }
+                    }
+                }
+            }
+            .searchable(text: $query)
+            .overlay { if recipes.isEmpty { ContentUnavailableView("No recipes yet", systemImage: "book") } }
+            .navigationTitle("Add to a recipe")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar { ToolbarItem(placement: .cancellationAction) { Button("Cancel") { dismiss() } } }
+        }
     }
 }

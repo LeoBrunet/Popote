@@ -1,9 +1,11 @@
 import SwiftUI
 
 /// Pick the nutrition source of one ingredient: a generic food, a product (search or barcode), or not counted.
+/// With `substitute`, picking a food or product replaces the ingredient (new name, same weight): used in the journal.
 struct IngredientMatchView: View {
-    @Bindable var recipe: Recipe
+    @Binding var lines: [IngredientLine]
     let line: IngredientLine
+    var substitute = false
     @Environment(\.dismiss) private var dismiss
     @State private var query = ""
     @State private var grams = ""
@@ -13,13 +15,13 @@ struct IngredientMatchView: View {
     @State private var error: String?
 
     var body: some View {
-        let live = recipe.ingredients.first { $0.id == line.id } ?? line
+        let live = lines.first { $0.id == line.id } ?? line
         let current = NutritionEngine.evaluate(live)
         NavigationStack {
             List {
                 Section {
                     VStack(alignment: .leading, spacing: 6) {
-                        Text(line.raw).font(.headline)
+                        Text(substitute ? live.name : line.raw).font(.headline)
                         HStack {
                             MatchBadge(kind: current.kind)
                             if let g = current.grams { Text("≈ \(Int(g)) g").font(.caption).foregroundStyle(.secondary) }
@@ -48,7 +50,8 @@ struct IngredientMatchView: View {
                 Section("Foods") {
                     ForEach(FoodTable.search(query).prefix(query.isEmpty ? 8 : 30)) { food in
                         Button {
-                            update { $0.foodID = food.id; $0.product = nil; $0.ignored = false }
+                            update { $0.foodID = food.id; $0.product = nil; $0.ignored = false; rename(&$0, to: food.name) }
+                            if substitute { dismiss() }
                         } label: {
                             row(food.name, detail: food.aisle.name, kcal: food.per100g.kcal, selected: live.foodID == food.id && !live.ignored)
                         }
@@ -101,7 +104,7 @@ struct IngredientMatchView: View {
                     .toolbar { ToolbarItem(placement: .cancellationAction) { Button("Cancel") { scanning = false } } }
                 }
             }
-            .onAppear { query = TextKey.normalize(line.name).count < 30 ? line.name : "" }
+            .onAppear { query = !substitute && TextKey.normalize(line.name).count < 30 ? line.name : "" }
         }
     }
 
@@ -129,14 +132,26 @@ struct IngredientMatchView: View {
     }
 
     private func choose(_ product: ProductSnapshot) {
-        update { $0.product = product; $0.foodID = nil; $0.ignored = false }
+        update { $0.product = product; $0.foodID = nil; $0.ignored = false; rename(&$0, to: product.name) }
         dismiss()
     }
 
+    /// Substitution keeps the weight that was eaten and drops what belonged to the old ingredient.
+    private func rename(_ line: inout IngredientLine, to name: String) {
+        guard substitute, name != line.name else { return }
+        let grams = NutritionEngine.evaluate(self.line).grams
+        line.name = name
+        line.estimate = nil
+        if let grams {
+            line.quantity = grams
+            line.unit = "g"
+            line.gramsOverride = grams
+        }
+        line.raw = "\(Units.format(line.quantity, unit: line.unit)) \(name)".trimmingCharacters(in: .whitespaces)
+    }
+
     private func update(_ change: (inout IngredientLine) -> Void) {
-        var ingredients = recipe.ingredients
-        guard let i = ingredients.firstIndex(where: { $0.id == line.id }) else { return }
-        change(&ingredients[i])
-        recipe.ingredients = ingredients
+        guard let i = lines.firstIndex(where: { $0.id == line.id }) else { return }
+        change(&lines[i])
     }
 }

@@ -175,6 +175,7 @@ struct LogMealSheet: View {
         entry.amount = old.amount
         entry.amountUnit = old.amountUnit
         entry.recipeID = old.recipeID
+        entry.linesData = old.linesData
         context.insert(entry)
         Task {
             entry.healthUUID = await health.save(entry)

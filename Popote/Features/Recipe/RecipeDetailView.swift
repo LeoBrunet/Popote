@@ -56,7 +56,7 @@ struct RecipeDetailView: View {
             }
         }
         .sheet(isPresented: $editing) { RecipeEditView(recipe: recipe) }
-        .sheet(item: $matching) { line in IngredientMatchView(recipe: recipe, line: line) }
+        .sheet(item: $matching) { line in IngredientMatchView(lines: Bindable(recipe).ingredients, line: line) }
         .sheet(isPresented: $logging) { LogRecipeSheet(recipe: recipe, perServing: nutrition.perServing) }
         .confirmationDialog("Delete this recipe?", isPresented: $confirmDelete, titleVisibility: .visible) {
             Button("Delete", role: .destructive) {
@@ -298,6 +298,7 @@ struct LogRecipeSheet: View {
                                                  nutrition: perServing * portions)
                         entry.recipeID = recipe.id
                         entry.setAmount(portions, unit: "serving")
+                        entry.lines = recipe.ingredients.map { $0.scaled(by: portions / Double(max(recipe.servings, 1))) }
                         context.insert(entry)
                         Task {
                             entry.healthUUID = await health.save(entry)

@@ -434,6 +434,16 @@
         }
       }
     },
+    "Add an ingredient (\"20 g butter\")": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter un ingrédient (« 20 g de beurre »)"
+          }
+        }
+      }
+    },
     "Add it in Claude": {
       "localizations": {
         "fr": {
@@ -454,6 +464,26 @@
         }
       }
     },
+    "Add to a recipe": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter à une recette"
+          }
+        }
+      }
+    },
+    "Add to another recipe": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter à une autre recette"
+          }
+        }
+      }
+    },
     "Add to groceries": {
       "localizations": {
         "fr": {
@@ -470,6 +500,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ajoute ce que tu as (riz, œufs, feta…)"
+          }
+        }
+      }
+    },
+    "Added to %@": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouté à %@"
+          }
+        }
+      }
+    },
+    "Adds %@ g to a recipe's ingredients. You can still log it afterwards.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajoute %@ g aux ingrédients d’une recette. Tu peux toujours le noter ensuite."
           }
         }
       }
@@ -520,6 +570,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Aussi sur « %@ »"
+          }
+        }
+      }
+    },
+    "Also update the recipe": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mettre aussi à jour la recette"
           }
         }
       }
@@ -728,6 +788,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Glucides"
+          }
+        }
+      }
+    },
+    "Changed": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifié"
           }
         }
       }
@@ -2527,6 +2597,16 @@
         }
       }
     },
+    "Saves these ingredients in %@, for %@": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enregistre ces ingrédients dans %1$@, pour %2$@"
+          }
+        }
+      }
+    },
     "Say hello": {
       "localizations": {
         "fr": {
@@ -2893,6 +2973,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tenir compte de"
+          }
+        }
+      }
+    },
+    "Tap an ingredient to swap it for another (same weight) or change its weight. Swipe to remove it.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touche un ingrédient pour le remplacer par un autre (même poids) ou changer son poids. Balaie pour le retirer."
           }
         }
       }

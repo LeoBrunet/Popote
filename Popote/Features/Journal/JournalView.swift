@@ -212,5 +212,6 @@ struct JournalView: View {
     private func delete(_ entry: JournalEntry) {
         if let uuid = entry.healthUUID { Task { await health.delete(healthUUID: uuid) } }
         context.delete(entry)
+        try? context.save()
     }
 }

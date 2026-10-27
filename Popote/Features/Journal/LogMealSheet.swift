@@ -177,8 +177,10 @@ struct LogMealSheet: View {
         entry.recipeID = old.recipeID
         entry.linesData = old.linesData
         context.insert(entry)
+        try? context.save()
         Task {
             entry.healthUUID = await health.save(entry)
+            try? context.save()
             dismiss()
         }
     }

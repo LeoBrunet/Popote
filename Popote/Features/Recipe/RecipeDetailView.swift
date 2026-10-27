@@ -300,8 +300,11 @@ struct LogRecipeSheet: View {
                         entry.setAmount(portions, unit: "serving")
                         entry.lines = recipe.ingredients.map { $0.scaled(by: portions / Double(max(recipe.servings, 1))) }
                         context.insert(entry)
+                        try? context.save()
+        try? context.save()
                         Task {
                             entry.healthUUID = await health.save(entry)
+                            try? context.save()
                             dismiss()
                         }
                     }

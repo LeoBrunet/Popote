@@ -62,6 +62,9 @@ struct IngredientLine: Codable, Hashable, Identifiable {
         line.quantity = quantity.map { $0 * factor }
         line.gramsOverride = gramsOverride.map { $0 * factor }
         line.estimate = estimate.map { EstimatedNutrition(kcal: $0.kcal * factor, protein: $0.protein * factor, carbs: $0.carbs * factor, fat: $0.fat * factor) }
+        if let q = line.quantity, !name.isEmpty {
+            line.raw = "\(Units.format(q, unit: unit)) \(name)".trimmingCharacters(in: .whitespaces)
+        }
         return line
     }
 }

@@ -126,8 +126,10 @@ struct AddFoodSheet: View {
             entry.lines = [line]
         }
         context.insert(entry)
+        try? context.save()
         Task {
             entry.healthUUID = await health.save(entry)
+            try? context.save()
             dismiss()
         }
     }
@@ -178,6 +180,7 @@ private struct QuantitySheet: View {
                 RecipePickerSheet { recipe in
                     if let line = item.line(grams: gramsValue) {
                         recipe.ingredients.append(line)
+                        try? recipe.modelContext?.save()
                         addedTo.append(recipe.title)
                     }
                 }

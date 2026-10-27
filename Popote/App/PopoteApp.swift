@@ -60,6 +60,7 @@ struct RootView: View {
             }
             guard phase == .active else { return }
             imports.processInbox(context: context)
+            JournalBackfill.run(context: context)   // once: ingredients for meals logged by weight before they were kept
             Task {
                 await health.refresh()
                 MaintenanceLearner.update(context: context, health: health)   // weekly: weight trend vs intake

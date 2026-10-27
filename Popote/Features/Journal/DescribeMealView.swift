@@ -193,9 +193,11 @@ struct DescribeMealView: View {
         entry.setAmount(1, unit: "serving")
         entry.lines = draft.lines
         context.insert(entry)
+        try? context.save()
         context.delete(draft)
         Task {
             entry.healthUUID = await health.save(entry)
+            try? context.save()
             onDone()
             dismiss()
         }
@@ -209,6 +211,7 @@ struct DescribeMealView: View {
         recipe.imageData = draft.photo
         recipe.rawText = draft.text.isEmpty ? nil : draft.text
         context.insert(recipe)
+        try? context.save()
         savedRecipe = true
     }
 }

@@ -92,6 +92,7 @@ struct EditEntrySheet: View {
                 Button("Delete", role: .destructive) {
                     if let uuid = entry.healthUUID { Task { await health.delete(healthUUID: uuid) } }
                     context.delete(entry)
+                    try? context.save()
                     dismiss()
                 }
             }
@@ -183,6 +184,14 @@ struct EditEntrySheet: View {
         }
     }
 
+    /// Same ingredient as the recipe's line, for the servings this meal stands for.
+    private func differs(_ recipeLine: IngredientLine, _ eaten: IngredientLine) -> Bool {
+        guard let recipe, amount > 0 else { return true }
+        let expected = recipeLine.scaled(by: amount / Double(max(recipe.servings, 1)))
+        let ga = NutritionEngine.evaluate(expected).grams ?? 0, gb = NutritionEngine.evaluate(eaten).grams ?? 0
+        return expected.name != eaten.name || abs(ga - gb) > max(1, ga * 0.02)
+    }
+
     private var linesTotal: Nutrition { lines.reduce(.zero) { $0 + NutritionEngine.evaluate($1).nutrition } }
 
     /// Amount now shown vs. the amount the ingredients were stored for.
@@ -224,7 +233,13 @@ struct EditEntrySheet: View {
             let eaten = lines.map { $0.scaled(by: factor) }
             entry.lines = eaten
             if updateRecipe, let recipe, differsFromRecipe, !isGrams, amount > 0 {
-                recipe.ingredients = eaten.map { $0.scaled(by: Double(recipe.servings) / amount) }
+                // Untouched ingredients keep the recipe's own line (and its wording); changed ones are scaled back.
+                let original = Dictionary(recipe.ingredients.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
+                let unchanged = Set(lines.filter(loadedLines.contains).map(\.id))
+                recipe.ingredients = eaten.map { line in
+                    if unchanged.contains(line.id), let kept = original[line.id], !differs(kept, line) { return kept }
+                    return line.scaled(by: Double(recipe.servings) / amount)
+                }
             }
         }
         entry.title = title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? entry.title : title
@@ -241,11 +256,13 @@ struct EditEntrySheet: View {
         entry.carbs = carbs == untouched.carbs.formatted(.number.precision(.fractionLength(0...1))) ? untouched.carbs : number(carbs) ?? untouched.carbs
         entry.fat = fat == untouched.fat.formatted(.number.precision(.fractionLength(0...1))) ? untouched.fat : number(fat) ?? untouched.fat
 
+        try? context.save()
         saving = true
         Task {
             // Health samples can't be edited: replace the old one.
             if let old = entry.healthUUID { await health.delete(healthUUID: old) }
             entry.healthUUID = await health.save(entry)
+            try? context.save()
             saving = false
             dismiss()
         }
